@@ -54,49 +54,12 @@ PonyTravelPlanner/
 ├── build.gradle
 ├── settings.gradle
 └── README.md
-```
-
----
-
-##  Banco de Dados (SQLite)
-
-Gerenciado pela classe `DBHelper`, com 3 tabelas:
-
-### Viagens
-| Coluna      | Tipo    | Descrição                    |
-|-------------|---------|------------------------------|
-| id          | INTEGER | Chave primária autoincrement |
-| destino     | TEXT    | Nome do destino              |
-| plano       | TEXT    | Descrição do itinerário      |
-| status      | TEXT    | "Nova viagem" / "Finalizada" / "Cancelada" |
-| usuario_id  | INTEGER | ID do usuário (legado)       |
-| email       | TEXT    | Email do dono da viagem      |
-
-### Posts
-| Coluna      | Tipo    | Descrição                    |
-|-------------|---------|------------------------------|
-| id          | INTEGER | Chave primária autoincrement |
-| texto       | TEXT    | Conteúdo do post             |
-| usuario_id  | INTEGER | ID do usuário (legado)       |
-| viagem_id   | INTEGER | Viagem vinculada (opcional)  |
-| email       | TEXT    | Email do dono do post        |
-
-### LugaresRecentes
-| Coluna | Tipo    | Descrição                    |
-|--------|---------|------------------------------|
-| id     | INTEGER | Chave primária autoincrement |
-| nome   | TEXT    | Nome do lugar                |
-| email  | TEXT    | Email do dono do registro    |
-
----
 
 ##  Telas (MainActivity.kt)
 
 O arquivo `MainActivity.kt` contém toda a navegação e UI do app dentro de uma única função `@Composable` chamada `PonyTripApp()`, usando controle de tela por variável de estado `telaAtual`.
 
 ##  Screenshots
-
-## 📸 Screenshots
 
 <table>
 <tr>
@@ -151,27 +114,12 @@ O arquivo `MainActivity.kt` contém toda a navegação e UI do app dentro de uma
 </tr>
 </table>
 
-### Componentes dentro da Home
-
-| Componente         | Descrição                                              |
-|--------------------|--------------------------------------------------------|
-| TopAppBar          | Barra superior com logo e botão de menu                |
-| LazyColumn         | Lista de viagens e posts                               |
-| Sidebar            | Menu lateral com perfil, viagens e botão de sair       |
-| FAB expandido      | Botão flutuante com opções: Novo Post / Nova Viagem    |
-| Modal Nova Viagem  | Bottom sheet para criar viagem com lugares sugeridos   |
-| Modal Post         | Bottom sheet para criar ou editar post                 |
-| Modal Editar Perfil| Bottom sheet para alterar nome, email e foto           |
-| Modal Histórico    | Bottom sheet para gerenciar viagens existentes         |
-| AlertDialog Saída  | Confirmação antes de deslogar                          |
-
----
 
 ##  Como Rodar
 
 1. Clone o repositório:
 ```bash
-git clone (https://github.com/hanjimeu/PlanejadorViagens)
+git clone https://github.com/hanjimeu/PlanejadorViagens
 ```
 
 2. Abra no **Android Studio**
