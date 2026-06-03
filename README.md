@@ -1,16 +1,16 @@
-# 🦄 PonyTrip
+#  PonyTrip
 
 Aplicativo Android de planejamento de viagens com tema My Little Pony, desenvolvido em Kotlin com Jetpack Compose.
 
 ---
 
-## 📱 Sobre o Projeto
+##  Sobre o Projeto
 
 O PonyTrip permite que usuários criem contas, planejem viagens, registrem itinerários e publiquem posts sobre suas aventuras. Cada conta tem seus próprios dados isolados — viagens, posts e lugares recentes são separados por usuário.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - **Autenticação** — cadastro e login com email e senha, persistidos via SharedPreferences
 - **Splash Screen** — tela de carregamento animada com logo e gradiente
@@ -23,7 +23,7 @@ O PonyTrip permite que usuários criem contas, planejem viagens, registrem itine
 
 ---
 
-## 🗂️ Scaffolding (Estrutura do Projeto)
+##  Scaffolding (Estrutura do Projeto)
 
 ```
 PonyTravelPlanner/
@@ -58,7 +58,7 @@ PonyTravelPlanner/
 
 ---
 
-## 🗄️ Banco de Dados (SQLite)
+##  Banco de Dados (SQLite)
 
 Gerenciado pela classe `DBHelper`, com 3 tabelas:
 
@@ -90,16 +90,66 @@ Gerenciado pela classe `DBHelper`, com 3 tabelas:
 
 ---
 
-## 🖥️ Telas (MainActivity.kt)
+##  Telas (MainActivity.kt)
 
 O arquivo `MainActivity.kt` contém toda a navegação e UI do app dentro de uma única função `@Composable` chamada `PonyTripApp()`, usando controle de tela por variável de estado `telaAtual`.
 
-### Fluxo de telas
+##  Screenshots
 
-```
-Splash → Login → Home
-              ↘ Cadastro ↗
-```
+## 📸 Screenshots
+
+<table>
+<tr>
+<td align="center">
+<img src="screenshots/splash.jpeg" width="220"><br>
+<b>Tela de Abertura</b>
+</td>
+
+<td align="center">
+<img src="screenshots/login.jpeg" width="220"><br>
+<b>Login</b>
+</td>
+
+<td align="center">
+<img src="screenshots/cadastro.jpeg" width="220"><br>
+<b>Cadastro</b>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="screenshots/home.jpeg" width="220"><br>
+<b>Home</b>
+</td>
+
+<td align="center">
+<img src="screenshots/sidebar.jpeg" width="220"><br>
+<b>Sidebar</b>
+</td>
+
+<td align="center">
+<img src="screenshots/posts.jpeg" width="220"><br>
+<b>Posts de Viagem</b>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="screenshots/viagem.jpeg" width="220"><br>
+<b>Nova Viagem</b>
+</td>
+
+<td align="center">
+<img src="screenshots/perfil.jpeg" width="220"><br>
+<b>Editar Perfil</b>
+</td>
+
+<td align="center">
+<img src="screenshots/historico.jpeg" width="220"><br>
+<b>Histórico</b>
+</td>
+</tr>
+</table>
 
 ### Componentes dentro da Home
 
@@ -117,11 +167,11 @@ Splash → Login → Home
 
 ---
 
-## 🚀 Como Rodar
+##  Como Rodar
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/ponytrip.git
+git clone (https://github.com/hanjimeu/PlanejadorViagens)
 ```
 
 2. Abra no **Android Studio**
@@ -132,7 +182,7 @@ git clone https://github.com/seu-usuario/ponytrip.git
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 | Tecnologia           | Uso                              |
 |----------------------|----------------------------------|
@@ -146,7 +196,7 @@ git clone https://github.com/seu-usuario/ponytrip.git
 
 ---
 
-## 📦 Dependências (build.gradle)
+##  Dependências (build.gradle)
 
 ```gradle
 implementation "androidx.compose.material3:material3:1.x.x"
@@ -157,6 +207,6 @@ implementation "androidx.compose.material:material-icons-extended:1.x.x"
 
 ---
 
-## 👩‍💻 Autora
+##  Autor
 
-Desenvolvido com 🩷 e muita magia pony.
+Desenvolvido por Mariana Moreira
