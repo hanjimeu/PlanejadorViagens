@@ -55,6 +55,8 @@ PonyTravelPlanner/
 ├── settings.gradle
 └── README.md
 
+```
+
 ##  Telas (MainActivity.kt)
 
 O arquivo `MainActivity.kt` contém toda a navegação e UI do app dentro de uma única função `@Composable` chamada `PonyTripApp()`, usando controle de tela por variável de estado `telaAtual`.
